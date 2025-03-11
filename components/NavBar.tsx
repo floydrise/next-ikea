@@ -10,120 +10,53 @@ import {
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
+import { MenuButtonLg } from "@/components/MenuButtonLg";
+import { MenuInput } from "@/components/MenuInput";
+import {MenuButtonSm} from "@/components/MenuButtonSm";
+import {NavSideButtons} from "@/components/NavSideButtons";
+import {NavBottomMenu} from "@/components/NavBottomMenu";
 
 export const NavBar = () => {
   return (
-    <div className={"flex"}>
-      <div className={"sticky flex justify-center items-center py-8 w-24"}>
-        <button className={"hover:cursor-pointer"}>
+    <>
+      <div className={"flex"}>
+        <MenuButtonLg />
+        <div className={"w-full"}>
+          {/*Div top*/}
           <div
             className={
-              "hover:bg-zinc-200 hover:rounded-full flex justify-center p-2"
+              "flex border-b md:border-none  justify-between py-6 items-center"
             }
           >
-            <MenuIcon className={"h-5 w-5"} />
+            <MenuButtonSm/>
+            <MenuInput />
+            <NavSideButtons/>
           </div>
-          <p className={"text-xs"}>Меню</p>
-        </button>
+          {/*Div bottom*/}
+          <NavBottomMenu/>
+        </div>
       </div>
-      <div className={"w-full"}>
-        {/*Div top*/}
-        <div className={"flex justify-between py-6 items-center"}>
-          <Link href={"/"}>
-            <div className="w-24 h-10 flex items-center justify-center">
-              <Image
-                  src={"/ikea_logo.svg"}
-                  alt="ikea logo"
-                  width={90}
-                  height={90}
-                  className="w-full h-full"
-              />
-            </div>
-          </Link>
-          {/*Input*/}
-          <div className={"hidden md:block ml-4 relative w-3xl"}>
-            <Input
-              className={"pl-10  h-12 rounded-full bg-zinc-100 "}
-              placeholder={"Търсете продукти, стаи, идеи ..."}
-            />
-            <div
-              className="absolute inset-y-0 left-0 pl-3
+      <div className={"md:hidden m-4 relative"}>
+        <Input
+          className={"pl-10  h-12 rounded-full bg-zinc-100 "}
+          placeholder={"Търсете продукти, стаи, идеи ..."}
+        />
+        <div
+          className="absolute inset-y-0 left-0 pl-3
                     flex items-center
                     pointer-events-none"
-            >
-              <SearchIcon className={"text-gray-600 h-5 w-5"} />
-            </div>
-            <div
-              className="absolute inset-y-0 right-5
-                    flex items-center"
-            >
-              <div className="p-1 rounded-full hover:bg-zinc-300 transition duration-200 cursor-pointer">
-                <CameraIcon className="text-gray-600" />
-              </div>
-            </div>
-          </div>
-          <div className={"flex"}>
-            <Link
-              href={"#"}
-              className={
-                "flex justify-center gap-2 items-center hover:bg-zinc-300 rounded-full p-2 md:py-2 md:px-6"
-              }
-            >
-              <User />
-              <p className={"hidden lg:block font-bold text-xs"}>
-                Вход/Регистрация
-              </p>
-            </Link>
-            <Link
-              href={"#"}
-              className={
-                "flex justify-center items-center hover:bg-zinc-300 rounded-full p-2"
-              }
-            >
-              <Truck />
-            </Link>
-            <Link
-              href={"#"}
-              className={
-                "flex justify-center items-center hover:bg-zinc-300 rounded-full p-2"
-              }
-            >
-              <Heart />
-            </Link>
-            <Link
-              href={"#"}
-              className={
-                "flex justify-center items-center hover:bg-zinc-300 rounded-full p-2"
-              }
-            >
-              <ShoppingBasket />
-            </Link>
-          </div>
+        >
+          <SearchIcon className={"text-gray-600 h-5 w-5"} />
         </div>
-        {/*Div bottom*/}
-        <div className={"pb-2 border-b"}>
-          <nav className={"flex gap-8"}>
-            <Link
-              href={"#"}
-              className={"font-bold text-base hover:underline decoration-0"}
-            >
-              Продукти
-            </Link>
-            <Link
-              href={"#"}
-              className={"font-bold text-base hover:underline decoration-0"}
-            >
-              Стаи
-            </Link>
-            <Link
-              href={"#"}
-              className={"font-bold text-base hover:underline decoration-0"}
-            >
-              Вдъхновение
-            </Link>
-          </nav>
+        <div
+          className="absolute inset-y-0 right-5
+                    flex items-center"
+        >
+          <div className="p-1 rounded-full hover:bg-zinc-300 transition duration-200 cursor-pointer">
+            <CameraIcon className="text-gray-600" />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
