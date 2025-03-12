@@ -1,11 +1,9 @@
-import {CarouselCard} from "@/components/CarouselCard";
+import { IKEACarousel } from "@/components/IKEACarousel";
 
 export default function Home() {
-    return (
-        <div>
-      <div className={"flex mt-20 justify-center"}>
-        <CarouselCard/>
-      </div>
-        </div>
+  return (
+    <div className={"flex my-10 mx-4 xl:mx-0 xl:ml-22"}>
+      <IKEACarousel imgUrls={["/CarouselImg1.jpg", "/CarouselImg2.jpg"]} />
+    </div>
   );
 }

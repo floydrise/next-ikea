@@ -21,7 +21,7 @@ export const NavBar = () => {
     <>
       <div className={"flex"}>
         <MenuButtonLg />
-        <div className={"w-full"}>
+        <div className={"w-full xl:ml-22"}>
           {/*Div top*/}
           <div
             className={

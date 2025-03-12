@@ -3,7 +3,7 @@ import { MenuIcon } from "lucide-react";
 export const MenuButtonLg = () => {
   return (
     <div
-      className={"hidden sticky xl:block py-8 w-24"}
+      className={"hidden fixed xl:block py-8 w-24"}
     >
       <div className={"hover:cursor-pointer flex flex-col justify-center items-center"}>
         <div
