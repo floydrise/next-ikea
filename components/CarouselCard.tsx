@@ -1,19 +1,20 @@
 import Image from "next/image";
+import {CardInfo} from "@/lib/types";
 
-export const CarouselCard = ({ imgUrls }: { imgUrls: string }) => {
+export const CarouselCard = ({ cardInfo }: { cardInfo: CardInfo }) => {
   return (
     <div className={"flex shrink-0 w-full flex-col lg:flex-row"}>
       <div>
-        <Image src={imgUrls} alt={"asd"} width={1000} height={1000} />
+        <Image src={cardInfo.imgUrl} alt={"Card image"} width={1000} height={500} />
       </div>
       <div
         className={
-          "p-10 xl:w-1/2 flex flex-col justify-start items-start gap-6 bg-sky-600"
+          `p-10 xl:w-1/2 flex flex-col justify-start items-start gap-6 ${cardInfo.color}`
         }
       >
-        <h1 className={"text-white font-bold text-xl"}>IKEA Family Оферти</h1>
-        <p className={"font-light text-white"}>
-          30% отстъпка на избрани продукти
+        <h1 className={`${cardInfo.text.color} font-bold text-xl`}>{cardInfo.text.header}</h1>
+        <p className={`font-light ${cardInfo.text.color}`}>
+            {cardInfo.text.para}
         </p>
         <button
           className={

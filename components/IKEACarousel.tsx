@@ -4,49 +4,55 @@ import { CarouselCard } from "@/components/CarouselCard";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { CardInfo } from "@/lib/types";
+import { VerticalCard } from "@/components/VerticalCard";
 
-export const IKEACarousel = ({ imgUrls }: { imgUrls: string[] }) => {
+export const IKEACarousel = ({ cardInfo }: { cardInfo: CardInfo[] }) => {
   const [current, setCurrent] = useState<number>(0);
 
   const previousSlide = () => {
     if (current === 0) {
-      setCurrent(imgUrls.length - 1);
+      setCurrent(cardInfo.length - 1);
     } else {
       setCurrent(current - 1);
     }
   };
 
   const nextSlide = () => {
-    if (current === imgUrls.length - 1) {
+    if (current === cardInfo.length - 1) {
       setCurrent(0);
     } else {
       setCurrent(current + 1);
     }
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev === imgUrls.length - 1 ? 0 : prev + 1));
-    }, 5000);
-    return () => {
-      if (interval) {
-        clearInterval(interval);
-      }
-    };
-  }, [imgUrls.length]);
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrent((prev) => (prev === cardInfo.length - 1 ? 0 : prev + 1));
+        }, 5000);
+        return () => {
+          if (interval) {
+            clearInterval(interval);
+          }
+        };
+      }, [cardInfo.length]);
 
   return (
     <div className={"flex flex-col"}>
       <div className={"overflow-hidden relative"}>
         <div
-          className={`flex flex-row transition ease-out duration-500`}
+          className={`flex flex-row transition ${cardInfo[0].type === "vertical" ? "gap-4" : null} ease-out duration-500`}
           style={{
             transform: `translateX(-${current * 100}%)`,
           }}
         >
-          {imgUrls.map((url, index) => (
-            <CarouselCard key={index} imgUrls={url} />
-          ))}
+          {cardInfo.map((info, index) => {
+            return info.type === "horizontal" ? (
+              <CarouselCard key={index} cardInfo={info} />
+            ) : (
+              <VerticalCard key={index} cardInfo={info} />
+            );
+          })}
         </div>
         <div
           className={
@@ -70,7 +76,7 @@ export const IKEACarousel = ({ imgUrls }: { imgUrls: string[] }) => {
         </div>
       </div>
       <div className={"mt-1 justify-center items-center w-full flex "}>
-        {imgUrls.map((_, index) => (
+        {cardInfo.map((_, index) => (
           <div
             onClick={() => {
               setCurrent(index);
