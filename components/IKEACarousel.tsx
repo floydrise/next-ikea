@@ -28,12 +28,11 @@ export const IKEACarousel = ({ imgUrls }: { imgUrls: string[] }) => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev === imgUrls.length - 1 ? 0 : prev + 1));
     }, 5000);
-    const cleanup = () => {
+    return () => {
       if (interval) {
         clearInterval(interval);
       }
     };
-    return cleanup;
   }, [imgUrls.length]);
 
   return (
