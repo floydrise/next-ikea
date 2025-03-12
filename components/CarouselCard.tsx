@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const CarouselCard = ({ imgUrls }: { imgUrls: string }) => {
   return (
-    <div className={"flex w-full border flex-col lg:flex-row"}>
+    <div className={"flex shrink-0 w-full flex-col lg:flex-row"}>
       <div>
         <Image src={imgUrls} alt={"asd"} width={1000} height={1000} />
       </div>
@@ -16,8 +16,9 @@ export const CarouselCard = ({ imgUrls }: { imgUrls: string }) => {
           30% отстъпка на избрани продукти
         </p>
         <button
+            id={"this"}
           className={
-            "bg-white rounded-full py-2 px-4 hover:bg-gray-200 hover:cursor-pointer"
+            "bg-white rounded-full py-2 px-4 hover:bg-gray-300 hover:cursor-pointer"
           }
         >
           <p className={"font-bold text-sm"}>Виж повече</p>

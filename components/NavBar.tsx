@@ -1,20 +1,10 @@
-import {
-  CameraIcon,
-  Heart,
-  MenuIcon,
-  SearchIcon,
-  ShoppingBasket,
-  Truck,
-  User,
-} from "lucide-react";
-import Image from "next/image";
+import { CameraIcon, SearchIcon } from "lucide-react";
 import { Input } from "@/components/ui/input";
-import Link from "next/link";
 import { MenuButtonLg } from "@/components/MenuButtonLg";
 import { MenuInput } from "@/components/MenuInput";
-import {MenuButtonSm} from "@/components/MenuButtonSm";
-import {NavSideButtons} from "@/components/NavSideButtons";
-import {NavBottomMenu} from "@/components/NavBottomMenu";
+import { MenuButtonSm } from "@/components/MenuButtonSm";
+import { NavSideButtons } from "@/components/NavSideButtons";
+import { NavBottomMenu } from "@/components/NavBottomMenu";
 
 export const NavBar = () => {
   return (
@@ -28,12 +18,12 @@ export const NavBar = () => {
               "flex border-b md:border-none  justify-between py-6 items-center"
             }
           >
-            <MenuButtonSm/>
+            <MenuButtonSm />
             <MenuInput />
-            <NavSideButtons/>
+            <NavSideButtons />
           </div>
           {/*Div bottom*/}
-          <NavBottomMenu/>
+          <NavBottomMenu />
         </div>
       </div>
       <div className={"md:hidden m-4 relative"}>
