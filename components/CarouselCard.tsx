@@ -16,7 +16,6 @@ export const CarouselCard = ({ imgUrls }: { imgUrls: string }) => {
           30% отстъпка на избрани продукти
         </p>
         <button
-            id={"this"}
           className={
             "bg-white rounded-full py-2 px-4 hover:bg-gray-300 hover:cursor-pointer"
           }

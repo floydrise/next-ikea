@@ -56,28 +56,28 @@ export const IKEACarousel = ({ imgUrls }: { imgUrls: string[] }) => {
         >
           <Button
             size={"icon"}
-            className={"rounded-full hover:cursor-pointer"}
+            className={"rounded-full hover:cursor-pointer ml-2"}
             onClick={previousSlide}
           >
             <ChevronLeft />
           </Button>
           <Button
             size={"icon"}
-            className={"rounded-full hover:cursor-pointer"}
+            className={"rounded-full hover:cursor-pointer mr-2"}
             onClick={nextSlide}
           >
             <ChevronRight />
           </Button>
         </div>
       </div>
-      <div className={"mt-1 justify-center items-center border w-full flex "}>
+      <div className={"mt-1 justify-center items-center w-full flex "}>
         {imgUrls.map((_, index) => (
           <div
             onClick={() => {
               setCurrent(index);
             }}
             key={`square` + index}
-            className={`w-full h-1 hover:cursor-pointer transition ease-in duration-400 ${index === current ? "bg-black" : "bg-gray-300"}`}
+            className={`w-full h-0.5 hover:cursor-pointer rounded-lg transition ease-in duration-400 ${index === current ? "bg-black" : "bg-gray-300"}`}
           ></div>
         ))}
       </div>
