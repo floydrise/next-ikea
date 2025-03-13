@@ -1,4 +1,6 @@
 import { CardInfo } from "@/lib/types";
+import {ArrowRight} from "lucide-react";
+
 
 export const headerCards: CardInfo[] = [
   {
@@ -69,13 +71,13 @@ export const offersCards: CardInfo[] = [
   {
     type: "vertical",
     imgUrl: "/offersCard1.jpg",
-    color: "bg-sky-400",
+    color: "bg-cyan-500",
     text: { header: "Купи сега, плати по-късно с TBI Bank", color: "text-white" },
   },
   {
     type: "vertical",
     imgUrl: "/offersCard2.jpg",
-    color: "bg-amber-300",
+    color: "bg-amber-200",
     text: {
       header: "Продукти под 10 лв.",
       color: "text-black",
@@ -86,5 +88,46 @@ export const offersCards: CardInfo[] = [
     imgUrl: "/offersCard3.jpg",
     color: "bg-lime-100",
     text: { header: "Активни навън", color: "text-black" },
+  },
+];
+export const adviceCards: CardInfo[] = [
+  {
+    type: "image",
+    color: "bg-green-600",
+    text: {
+      header: "Малки промени за по-добър живот. Заедно.",
+      color: "text-white"
+    },
+    button: <ArrowRight/>,
+  },
+  {
+    type: "image",
+    color: "bg-[url('/AdviceImg1.jpg')]",
+    button: "Пестене на енергия",
+  },
+  {
+    type: "image",
+    color: "bg-[url('/AdviceImg2.jpg')]",
+    button: "Пестене на енергия",
+  },
+  {
+    type: "image",
+    color: "bg-[url('/AdviceImg3.jpg')]",
+    button: "Пестене на енергия",
+  },
+  {
+    type: "image",
+    color: "bg-[url('/AdviceImg4.jpg')]",
+    button: "Пестене на енергия",
+  },
+  {
+    type: "image",
+    color: "bg-[url('/AdviceImg5.jpg')]",
+    button: "Пестене на енергия",
+  },
+  {
+    type: "image",
+    color: "bg-[url('/AdviceImg6.jpg')]",
+    button: "Пестене на енергия",
   },
 ];

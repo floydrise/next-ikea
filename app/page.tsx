@@ -6,8 +6,9 @@ import {
   headerCards,
   nowInIKEACard,
   skogsduvaCard,
-  offersCards,
+  offersCards, adviceCards,
 } from "@/lib/cardsInfo";
+import React from "react";
 
 export default function Home() {
   return (
@@ -30,6 +31,15 @@ export default function Home() {
         <section>
           <h1 className={"mt-16 mb-6 font-bold text-2xl"}>Оферти</h1>
           <ShadCarousel cardInfo={offersCards} />
+        </section>
+        {/*Advice section*/}
+        <section>
+          <h1 className={"mt-16 mb-6 font-bold text-2xl"}>
+            Вижте лесни и достъпни начини за по-устойчив начин на живот у дома
+          </h1>
+
+          <ShadCarousel cardInfo={adviceCards}/>
+
         </section>
       </div>
     </main>

@@ -1,11 +1,13 @@
+import {ReactNode} from "react";
+
 export interface CardInfo {
-  type: "vertical" | "horizontal",
-  imgUrl: string;
+  type: "vertical" | "horizontal" | "image",
+  imgUrl?: string;
   color: string;
-  text: {
+  text?: {
     header: string,
     para?: string,
     color: string
   }
-  button?: string
+  button?: string | ReactNode
 }
