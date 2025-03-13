@@ -131,3 +131,32 @@ export const adviceCards: CardInfo[] = [
     button: "Пестене на енергия",
   },
 ];
+export const ikeaIdeasCards: CardInfo[] = [
+  {
+    type: "vertical",
+    imgUrl: "/IkeaIdeas1.jpg",
+    color: "bg-sky-100",
+    text: { header: "Обща стая за родители и бебе", color: "text-black" },
+  },
+  {
+    type: "vertical",
+    imgUrl: "/IkeaIdeas2.jpg",
+    color: "bg-stone-100",
+    text: {
+      header: "Спалня в бяло - за красив и свеж облик",
+      color: "text-black",
+    },
+  },
+  {
+    type: "vertical",
+    imgUrl: "/IkeaIdeas3.jpg",
+    color: "bg-rose-50",
+    text: { header: "Модерна малка спалня", color: "text-black" },
+  },
+  {
+    type: "vertical",
+    imgUrl: "/IkeaIdeas4.jpg",
+    color: "bg-rose-50",
+    text: { header: "Вижте други вдъхновяващи идеи от ИКЕА", color: "text-black" },
+  },
+];
