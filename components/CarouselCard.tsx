@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import { CardInfo } from "@/lib/types";
 
@@ -9,7 +10,7 @@ export const CarouselCard = ({ cardInfo }: { cardInfo: CardInfo }) => {
       }
     >
       <Image
-        src={cardInfo.imgUrl}
+        src={cardInfo.imgUrl ?? ""}
         alt={"Card image"}
         width={1000}
         height={500}
@@ -19,12 +20,12 @@ export const CarouselCard = ({ cardInfo }: { cardInfo: CardInfo }) => {
         className={`p-10 xl:w-1/2 flex flex-col justify-start flex-1/2 items-start gap-6 ${cardInfo.color}`}
       >
         <h1
-          className={`${cardInfo.text.color} ${cardInfo.button !== "Виж повече" ? "underline decoration-0" : null} font-bold text-xl`}
+          className={`${cardInfo?.text?.color} ${cardInfo.button !== "Виж повече" ? "underline decoration-0" : null} font-bold text-xl`}
         >
-          {cardInfo.text.header}
+          {cardInfo?.text?.header}
         </h1>
-        <p className={`font-light ${cardInfo.text.color}`}>
-          {cardInfo.text.para}
+        <p className={`font-light ${cardInfo?.text?.color}`}>
+          {cardInfo?.text?.para}
         </p>
         <button
           className={
