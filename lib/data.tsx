@@ -10,7 +10,7 @@ import {
 export const headerCards: CardInfo[] = [
   {
     type: "horizontal",
-    imgUrl: "/CarouselImg1.jpg",
+    imgUrl: "/CarouselImages/CarouselImg1.jpg",
     color: "bg-sky-600",
     text: {
       header: "До 24 март",
@@ -21,7 +21,7 @@ export const headerCards: CardInfo[] = [
   },
   {
     type: "horizontal",
-    imgUrl: "/CarouselImg2.jpg",
+    imgUrl: "/CarouselImages/CarouselImg2.jpg",
     color: "bg-sky-600",
     text: {
       header: "IKEA Family оферти",
@@ -34,13 +34,13 @@ export const headerCards: CardInfo[] = [
 export const nowInIKEACard: CardInfo[] = [
   {
     type: "vertical",
-    imgUrl: "/NowInIKEA1.jpg",
+    imgUrl: "/NowInIKEA/NowInIKEA1.jpg",
     color: "bg-yellow-200",
     text: { header: "Пролетта идва с колекция TJARLEK", color: "text-black" },
   },
   {
     type: "vertical",
-    imgUrl: "/NowInIKEA2.jpg",
+    imgUrl: "/NowInIKEA/NowInIKEA2.jpg",
     color: "bg-amber-300",
     text: {
       header: "Откриване на ИКЕА Перник",
@@ -50,20 +50,20 @@ export const nowInIKEACard: CardInfo[] = [
   },
   {
     type: "vertical",
-    imgUrl: "/NowInIKEA3.jpg",
+    imgUrl: "/NowInIKEA/NowInIKEA3.jpg",
     color: "bg-stone-200",
     text: { header: "Вижте новате брошура кухни", color: "text-black" },
   },
   {
     type: "vertical",
-    imgUrl: "/NowInIKEA4.jpg",
+    imgUrl: "/NowInIKEA/NowInIKEA4.jpg",
     color: "bg-red-100",
     text: { header: "Съвети за по-безопасен дом", color: "text-black" },
   },
 ];
 export const skogsduvaCard: CardInfo = {
   type: "horizontal",
-  imgUrl: "/CarouselImg3.jpg",
+  imgUrl: "/CarouselImages/CarouselImg3.jpg",
   color: "bg-slate-600",
   text: {
     header: "SKOGSDUVA",
@@ -75,7 +75,7 @@ export const skogsduvaCard: CardInfo = {
 export const offersCards: CardInfo[] = [
   {
     type: "vertical",
-    imgUrl: "/offersCard1.jpg",
+    imgUrl: "/OffersImages/offersCard1.jpg",
     color: "bg-cyan-500",
     text: {
       header: "Купи сега, плати по-късно с TBI Bank",
@@ -84,7 +84,7 @@ export const offersCards: CardInfo[] = [
   },
   {
     type: "vertical",
-    imgUrl: "/offersCard2.jpg",
+    imgUrl: "/OffersImages/offersCard2.jpg",
     color: "bg-amber-200",
     text: {
       header: "Продукти под 10 лв.",
@@ -93,7 +93,7 @@ export const offersCards: CardInfo[] = [
   },
   {
     type: "vertical",
-    imgUrl: "/offersCard3.jpg",
+    imgUrl: "/OffersImages/offersCard3.jpg",
     color: "bg-lime-100",
     text: { header: "Активни навън", color: "text-black" },
   },
@@ -142,13 +142,13 @@ export const adviceCards: CardInfo[] = [
 export const ikeaIdeasCards: CardInfo[] = [
   {
     type: "vertical",
-    imgUrl: "/IkeaIdeas1.jpg",
+    imgUrl: "/IKEAIdeas/IkeaIdeas1.jpg",
     color: "bg-sky-100",
     text: { header: "Обща стая за родители и бебе", color: "text-black" },
   },
   {
     type: "vertical",
-    imgUrl: "/IkeaIdeas2.jpg",
+    imgUrl: "/IKEAIdeas/IkeaIdeas2.jpg",
     color: "bg-stone-100",
     text: {
       header: "Спалня в бяло - за красив и свеж облик",
@@ -157,13 +157,13 @@ export const ikeaIdeasCards: CardInfo[] = [
   },
   {
     type: "vertical",
-    imgUrl: "/IkeaIdeas3.jpg",
+    imgUrl: "/IKEAIdeas/IkeaIdeas3.jpg",
     color: "bg-rose-50",
     text: { header: "Модерна малка спалня", color: "text-black" },
   },
   {
     type: "vertical",
-    imgUrl: "/IkeaIdeas4.jpg",
+    imgUrl: "/IKEAIdeas/IkeaIdeas4.jpg",
     color: "bg-rose-50",
     text: {
       header: "Вижте други вдъхновяващи идеи от ИКЕА",
