@@ -41,7 +41,7 @@ export const IKEACarousel = ({ cardInfo }: { cardInfo: CardInfo[] }) => {
     <div className={"flex flex-col"}>
       <div className={"overflow-hidden relative"}>
         <div
-          className={`flex flex-row transition ${cardInfo[0].type === "vertical" ? "gap-4" : null} ease-out duration-500`}
+          className={`flex flex-row transition  ease-out duration-500`}
           style={{
             transform: `translateX(-${current * 100}%)`,
           }}

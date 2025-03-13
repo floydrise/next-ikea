@@ -14,9 +14,8 @@ export const CarouselCard = ({ cardInfo }: { cardInfo: CardInfo }) => {
         width={1000}
         height={500}
       />
-
       <div
-        className={`p-10 xl:w-1/2 flex flex-col justify-start flex-1/2 items-start gap-6 ${cardInfo.color}`}
+        className={`p-10 flex flex-col justify-start flex-1/2 items-start gap-6 ${cardInfo.color}`}
       >
         <h1
           className={`${cardInfo?.text?.color} ${cardInfo.button !== "Виж повече" ? "underline decoration-0" : null} font-bold text-xl`}

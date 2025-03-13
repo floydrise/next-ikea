@@ -1,6 +1,11 @@
-import {CardInfo, GrayCard} from "@/lib/types";
-import {ArrowRight, CalendarCheck, SquarePen, Store, Warehouse} from "lucide-react";
-
+import { CardInfo, GrayCard } from "@/lib/types";
+import {
+  ArrowRight,
+  CalendarCheck,
+  SquarePen,
+  Store,
+  Warehouse,
+} from "lucide-react";
 
 export const headerCards: CardInfo[] = [
   {
@@ -72,7 +77,10 @@ export const offersCards: CardInfo[] = [
     type: "vertical",
     imgUrl: "/offersCard1.jpg",
     color: "bg-cyan-500",
-    text: { header: "Купи сега, плати по-късно с TBI Bank", color: "text-white" },
+    text: {
+      header: "Купи сега, плати по-късно с TBI Bank",
+      color: "text-white",
+    },
   },
   {
     type: "vertical",
@@ -96,38 +104,38 @@ export const adviceCards: CardInfo[] = [
     color: "bg-green-600",
     text: {
       header: "Малки промени за по-добър живот. Заедно.",
-      color: "text-white"
+      color: "text-white",
     },
-    button: <ArrowRight/>,
+    button: <ArrowRight />,
   },
   {
     type: "image",
-    color: "bg-[url('/AdviceImg1.jpg')]",
+    color: "bg-[url('/Advice/AdviceImg1.jpg')]",
     button: "Пестене на енергия",
   },
   {
     type: "image",
-    color: "bg-[url('/AdviceImg2.jpg')]",
+    color: "bg-[url('/Advice/AdviceImg2.jpg')]",
     button: "Пестене на енергия",
   },
   {
     type: "image",
-    color: "bg-[url('/AdviceImg3.jpg')]",
+    color: "bg-[url('/Advice/AdviceImg3.jpg')]",
     button: "Пестене на енергия",
   },
   {
     type: "image",
-    color: "bg-[url('/AdviceImg4.jpg')]",
+    color: "bg-[url('/Advice/AdviceImg4.jpg')]",
     button: "Пестене на енергия",
   },
   {
     type: "image",
-    color: "bg-[url('/AdviceImg5.jpg')]",
+    color: "bg-[url('/Advice/AdviceImg5.jpg')]",
     button: "Пестене на енергия",
   },
   {
     type: "image",
-    color: "bg-[url('/AdviceImg6.jpg')]",
+    color: "bg-[url('/Advice/AdviceImg6.jpg')]",
     button: "Пестене на енергия",
   },
 ];
@@ -157,10 +165,24 @@ export const ikeaIdeasCards: CardInfo[] = [
     type: "vertical",
     imgUrl: "/IkeaIdeas4.jpg",
     color: "bg-rose-50",
-    text: { header: "Вижте други вдъхновяващи идеи от ИКЕА", color: "text-black" },
+    text: {
+      header: "Вижте други вдъхновяващи идеи от ИКЕА",
+      color: "text-black",
+    },
   },
 ];
-export const links = ["Баня", "Бебета и деца", "Градина", "Дневна", "Домашен офис", "Коридор", "Кухня", "Мокро помещение", "Спалня", "Трапезаря"]
+export const links = [
+  "Баня",
+  "Бебета и деца",
+  "Градина",
+  "Дневна",
+  "Домашен офис",
+  "Коридор",
+  "Кухня",
+  "Мокро помещение",
+  "Спалня",
+  "Трапезаря",
+];
 export const orderAndBuy: GrayCard[] = [
   {
     icon: <SquarePen />,
@@ -168,12 +190,12 @@ export const orderAndBuy: GrayCard[] = [
   },
   {
     icon: <Store />,
-    header: "Поръчай и вземи от мобилен хъб"
+    header: "Поръчай и вземи от мобилен хъб",
   },
   {
     icon: <Warehouse />,
-    header: "Поръчай и вземи"
-  }
+    header: "Поръчай и вземи",
+  },
 ];
 export const services: GrayCard[] = [
   {
@@ -182,14 +204,39 @@ export const services: GrayCard[] = [
   },
   {
     icon: <CalendarCheck />,
-    header: "Онлайн запазване на час"
+    header: "Онлайн запазване на час",
   },
   {
     icon: <Store />,
-    header: "Поръчай и вземи"
+    header: "Поръчай и вземи",
   },
   {
     icon: <Warehouse />,
-    header: "Поръчай и вземи от мобилен хъб"
-  }
+    header: "Поръчай и вземи от мобилен хъб",
+  },
+];
+
+export const familyAndBusiness: CardInfo[] = [
+  {
+    type: "horizontal",
+    imgUrl: "/IKEAFamily.jpg",
+    color: "bg-sky-600",
+    text: {
+      header: "IKEA Family",
+      para: "Програма IKEA Family е за всички, които споделяме една и съща страст - любовта към дома. Има много причини да се присъедините към IKEA Family - специални привилегии, редовна информация за всички намаления, покани за интересни събития, вдъхновяващи предложения и още ...",
+      color: "text-white",
+    },
+    button: "Виж повече",
+  },
+  {
+    type: "horizontal",
+    imgUrl: "/IKEABusiness.jpg",
+    color: "bg-orange-300",
+    text: {
+      header: "IKEA и за вашия бизнес",
+      para: "Времето и ресурсите са ценни - независимо в кой сектор е бизнесът ви. За това ви предлагаме разнообразие от добре проектирани мебели, с които лесно ще можете да обзаведете фирмата си по практичен и стилен начин",
+      color: "text-black",
+    },
+    button: "Виж повече",
+  },
 ];
