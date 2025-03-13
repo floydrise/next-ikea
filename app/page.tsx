@@ -10,6 +10,8 @@ import {
   adviceCards,
   ikeaIdeasCards,
   links,
+  orderAndBuy,
+  services,
 } from "@/lib/data";
 import React from "react";
 import Link from "next/link";
@@ -23,7 +25,9 @@ export default function Home() {
         {/*Intro section*/}
         <section>
           <IKEACarousel cardInfo={headerCards} />
-          <OrderAndBuy />
+          <div className={"mt-16"}>
+          <OrderAndBuy grayCards={orderAndBuy} />
+          </div>
         </section>
         {/*Now in IKEA section*/}
         <section>
@@ -135,15 +139,39 @@ export default function Home() {
               height={400}
             />
           </div>
-          <div className={"flex gap-10 justify-center items-center mt-10 flex-col"}>
+          <div
+            className={"flex gap-8 justify-center items-center mt-10 flex-col"}
+          >
             <div className={"flex flex-col gap-2 justify-center items-center"}>
               <p className={"font-light text-sm"}>9 от 351</p>
-              <div className={"w-48 h-1 rounded-full bg-gradient-to-r  from-blue-700 from-5% to-gray-200 to-5%"}></div>
+              <div
+                className={
+                  "w-36 h-1 rounded-full bg-gradient-to-r  from-blue-700 from-5% to-gray-100 to-5%"
+                }
+              ></div>
             </div>
             <div>
-              <Button variant={"outline"} size={"lg"} className={"rounded-full border-black hover:cursor-pointer hover:border-2"}>Зареди още</Button>
+              <Button
+                variant={"outline"}
+                size={"lg"}
+                className={
+                  "rounded-full border-black hover:cursor-pointer hover:border-2"
+                }
+              >
+                Зареди още
+              </Button>
             </div>
           </div>
+        </section>
+        {/*Services section*/}
+        <section>
+          <div className={"mt-16 mb-6 flex items-center justify-between"}>
+            <h1 className={"font-bold text-2xl"}>Услуги на ИКЕА</h1>
+            <p className={"font-light text-sm underline hover:cursor-pointer"}>
+              Вижте всички услуги
+            </p>
+          </div>
+          <OrderAndBuy grayCards={services} />
         </section>
       </div>
     </main>

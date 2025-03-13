@@ -11,3 +11,8 @@ export interface CardInfo {
   }
   button?: string | ReactNode
 }
+
+export interface GrayCard {
+  icon: ReactNode,
+  header: string,
+}

@@ -1,5 +1,5 @@
-import { CardInfo } from "@/lib/types";
-import {ArrowRight} from "lucide-react";
+import {CardInfo, GrayCard} from "@/lib/types";
+import {ArrowRight, CalendarCheck, SquarePen, Store, Warehouse} from "lucide-react";
 
 
 export const headerCards: CardInfo[] = [
@@ -160,5 +160,36 @@ export const ikeaIdeasCards: CardInfo[] = [
     text: { header: "Вижте други вдъхновяващи идеи от ИКЕА", color: "text-black" },
   },
 ];
-
 export const links = ["Баня", "Бебета и деца", "Градина", "Дневна", "Домашен офис", "Коридор", "Кухня", "Мокро помещение", "Спалня", "Трапезаря"]
+export const orderAndBuy: GrayCard[] = [
+  {
+    icon: <SquarePen />,
+    header: "Програми за проектиране на ИКЕА",
+  },
+  {
+    icon: <Store />,
+    header: "Поръчай и вземи от мобилен хъб"
+  },
+  {
+    icon: <Warehouse />,
+    header: "Поръчай и вземи"
+  }
+];
+export const services: GrayCard[] = [
+  {
+    icon: <SquarePen />,
+    header: "Съвети за обзавеждане на дома",
+  },
+  {
+    icon: <CalendarCheck />,
+    header: "Онлайн запазване на час"
+  },
+  {
+    icon: <Store />,
+    header: "Поръчай и вземи"
+  },
+  {
+    icon: <Warehouse />,
+    header: "Поръчай и вземи от мобилен хъб"
+  }
+];
