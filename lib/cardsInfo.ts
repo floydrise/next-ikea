@@ -68,30 +68,23 @@ export const skogsduvaCard: CardInfo = {
 export const offersCards: CardInfo[] = [
   {
     type: "vertical",
-    imgUrl: "/NowInIKEA1.jpg",
-    color: "bg-yellow-200",
-    text: { header: "Пролетта идва с колекция TJARLEK", color: "text-black" },
+    imgUrl: "/offersCard1.jpg",
+    color: "bg-sky-400",
+    text: { header: "Купи сега, плати по-късно с TBI Bank", color: "text-white" },
   },
   {
     type: "vertical",
-    imgUrl: "/NowInIKEA2.jpg",
+    imgUrl: "/offersCard2.jpg",
     color: "bg-amber-300",
     text: {
-      header: "Откриване на ИКЕА Перник",
-      para: "Ритейл Парк Перник Плаза",
-      color: "text-blue-700",
+      header: "Продукти под 10 лв.",
+      color: "text-black",
     },
   },
   {
     type: "vertical",
-    imgUrl: "/NowInIKEA3.jpg",
-    color: "bg-stone-200",
-    text: { header: "Вижте новате брошура кухни", color: "text-black" },
-  },
-  {
-    type: "vertical",
-    imgUrl: "/NowInIKEA4.jpg",
-    color: "bg-red-100",
-    text: { header: "Съвети за по-безопасен дом", color: "text-black" },
+    imgUrl: "/offersCard3.jpg",
+    color: "bg-lime-100",
+    text: { header: "Активни навън", color: "text-black" },
   },
 ];
