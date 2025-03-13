@@ -7,4 +7,5 @@ export interface CardInfo {
     para?: string,
     color: string
   }
+  button?: string
 }
