@@ -17,7 +17,7 @@ export const MenuButtonSm = () => {
       <Link href={"/"}>
         <div className="w-24 h-10 flex items-center justify-center">
           <Image
-            src={"/ikea_logo.svg"}
+            src={"/Ikea_logo.svg"}
             alt="ikea logo"
             width={90}
             height={90}
