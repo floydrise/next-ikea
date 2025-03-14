@@ -116,27 +116,27 @@ export const adviceCards: CardInfo[] = [
   {
     type: "image",
     color: "bg-[url('/Advice/AdviceImg2.jpg')]",
-    button: "Пестене на енергия",
+    button: "По-малко отпадъци",
   },
   {
     type: "image",
     color: "bg-[url('/Advice/AdviceImg3.jpg')]",
-    button: "Пестене на енергия",
+    button: "Пестене на вода",
   },
   {
     type: "image",
     color: "bg-[url('/Advice/AdviceImg4.jpg')]",
-    button: "Пестене на енергия",
+    button: "Дълъг живот на мебелите",
   },
   {
     type: "image",
     color: "bg-[url('/Advice/AdviceImg5.jpg')]",
-    button: "Пестене на енергия",
+    button: "Продукти за многократна употреба",
   },
   {
     type: "image",
     color: "bg-[url('/Advice/AdviceImg6.jpg')]",
-    button: "Пестене на енергия",
+    button: "Устойчиво хранене",
   },
 ];
 export const ikeaIdeasCards: CardInfo[] = [
